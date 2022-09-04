@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Конструктор плоских шлейфов</title>
+        <link href="cable.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="viewport">         
+         <ul class="cable-flat bottom"></ul>
+         <ul class="cable-connector left"></ul>
+         <ul class="cable-bottom"></ul>
+         <ul class="cable-middle"></ul>
+         <ul class="cable-top"></ul>
+         <ul class="cable-flat top"></ul>
+         <ul class="cable-connector right"></ul>
+         
+         <div class="choice"></div>
+         <form class="control" oninput="rebuildViewport(w.value,p.value,l.value,z.value,rev.value)">
+            <div class="group-item-left top8">Количество жил</div>
+            <input class="input" type="number" name="w">
+            <div class="group-item-left top8">Шаг</div>
+            <input class="input" type="number" name="p">
+            <div class="group-item-left top8">Длина</div>
+            <input class="input" type="number" name="l" step="10">
+            <div class="group-item-left top8">Коннекторы</div>
+            <input class="input" type="number" name="rev">
+            <div class="group-item-left top8">Масштаб</div>
+            <input class="input" type="number" name="z">
+         </form>
+      </div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenLite.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/easing/EasePack.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/plugins/CSSPlugin.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+      <script src="cable.js"></script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.group {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.group-item-left {
+    float: left;
+}
+
+.group-item-right {
+    float: right;
+}
+
+.black {
+   width: 100%; 
+   height: 40px; 
+   position: absolute; 
+   top: 0; 
+   z-index: 250; 
+   background-color: #000;
+}
+
+.white {
+   width: 100%;
+   height: 400px;
+   position: absolute;
+   top: 40px;
+   z-index: -100;
+   background-color: #fff;
+}
+
+.viewport {
+   width: 800px;
+   height: 480px;
+   position: relative;
+   margin: 0 auto;
+   overflow: visible;
+   background-color: #fff;
+}
+
+.viewport ul {
+   list-style-type: none;
+   position: absolute;
+}
+
+.viewport li {
+   position: absolute;
+   display: block;
+}
+
+.cable-middle {
+   top: 170px;
+   left: 350px;
+}
+
+.p1 .cable-middle li {
+   width: 61px;
+   height: 202px;
+   background-image: url(img/cable-1-middle.svg);
+}
+
+.p2 .cable-middle li {
+   width: 63px;
+   height: 202px;
+   background-image: url(img/cable-2-middle.svg);
+}
+
+.p3 .cable-middle li {
+   width: 65px;
+   height: 202px;
+   background-image: url(img/cable-3-middle.svg);
+}
+
+.cable-top {
+   top: 162px;
+   left: 361px;
+}
+
+.p1 .cable-top li {
+   width: 32px;
+   height: 10px;
+   background-image: url(img/cable-1-top.svg);
+}
+
+.p2 .cable-top li {
+   width: 33px;
+   height: 11px;
+   background-image: url(img/cable-2-top.svg);
+}
+
+.p3 .cable-top li {
+   width: 33px;
+   height: 12px;
+   background-image: url(img/cable-3-top.svg);
+}
+
+.cable-bottom {
+   top: 368px;
+   left: 355px;
+}
+
+.p1 .cable-bottom li {
+   width: 30px;
+   height: 5px;
+   background-image: url(img/cable-1-bottom.svg);
+}
+
+.p2 .cable-bottom li {
+   width: 30px;
+   height: 7px;
+   background-image: url(img/cable-2-bottom.svg);
+}
+
+.p3 .cable-bottom li {
+   width: 32px;
+   height: 9px;
+   background-image: url(img/cable-3-bottom.svg);
+}
+
+.cable-flat.top {
+   top: 162px;
+   left: 392px;
+}
+
+.p1 .cable-flat.bottom {
+   bottom: 109px;
+   right: 443px;
+}
+
+.p2 .cable-flat.bottom {
+   bottom: 107px;
+   right: 443px;
+}
+
+.p3 .cable-flat.bottom {
+   bottom: 105px;
+   right: 443px;
+}
+
+.cable-connector {
+   visibility: hidden;
+}
+
+.cable-connector.left.disabled li {
+   background-color: #fff;
+   background-image: url(img/c999.gif);
+   background-position: left center;
+   background-repeat: repeat-x;
+}
+
+.cable-flat li {
+   -webkit-transform: rotate(15deg); /* Chrome y Safari */
+   -moz-transform: rotate(15deg); /* Firefox */
+   -o-transform: rotate(15deg); /* Opera */
+}
+
+.cable-connector li {
+   -webkit-transform: skew(-60deg,15deg); /* Chrome y Safari */
+   -moz-transform: skew(-60deg,15deg); /* Firefox */
+   -o-transform: skew(-60deg,15deg); /* Opera */
+   background-color: #0000ff;
+}
+
+.cable-flat.top li,
+.cable-connector.right li {
+   -webkit-transform-origin: 0% 0%;
+   -moz-transform-origin: 0% 0%;
+   -o-transform-origin: 0% 0%;
+}
+
+.cable-flat.bottom li,
+.cable-connector.left li  {
+   -webkit-transform-origin: 100% 100%;
+   -moz-transform-origin: 100% 100%;
+   -o-transform-origin: 100% 100%;
+}
+
+.p1 .cable-flat li {
+   height: 3px;
+   background-image: url(img/cable-1-flat.svg);
+}
+
+.p1 .cable-connector li {
+   height: 2px;
+}
+
+.p2 .cable-flat li {
+   height: 5px;
+   background-image: url(img/cable-2-flat.svg);
+}
+
+.p2 .cable-connector li {
+   height: 3px;
+}
+
+.p3 .cable-flat li {
+   height: 7px;
+   background-image: url(img/cable-3-flat.svg);
+}
+
+.p3 .cable-connector li {
+   height: 4px;
+}
+
+.control {
+   width: 800px;
+   height: 40px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: #ccc;
+   z-index: 300;
+}
+
+.choice {
+   width: 800px;
+   height: 40px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #000;
+   color: #fff;
+   font-size: 16px;
+   line-height: 40px;
+   padding-left: 30px;
+   z-index: 300;
+}
+
+.sec {
+   height: 38px;
+   float: left;
+   margin-top: 2px;
+}
+
+.input {
+   width: 50px;
+   height: 24px;
+   padding-right: 10px;
+   padding-left: 10px;
+   margin-top: 8px;
+   background-color: #fff;
+   border: 0;
+   color: #848484;
+   font-size: 12px;
+   line-height: 24px;
+   float: left;
+   outline: none;
+}
+
+.top8 {
+   padding: 13px;
+}
